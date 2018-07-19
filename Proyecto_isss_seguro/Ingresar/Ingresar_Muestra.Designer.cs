@@ -145,6 +145,7 @@
             this.label3.Size = new System.Drawing.Size(81, 13);
             this.label3.TabIndex = 86;
             this.label3.Text = "Id del Paciente:";
+            this.label3.Visible = false;
             // 
             // label7
             // 
@@ -154,6 +155,7 @@
             this.label7.Size = new System.Drawing.Size(35, 13);
             this.label7.TabIndex = 87;
             this.label7.Text = "label7";
+            this.label7.Visible = false;
             // 
             // textBoxObservacion
             // 

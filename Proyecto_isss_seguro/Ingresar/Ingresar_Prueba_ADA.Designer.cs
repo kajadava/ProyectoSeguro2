@@ -32,13 +32,11 @@
             this.buttonguardar = new System.Windows.Forms.Button();
             this.buttoncancelar = new System.Windows.Forms.Button();
             this.textBoxdireccion = new System.Windows.Forms.TextBox();
-            this.textBoxafiliacion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
@@ -48,11 +46,9 @@
             // 
             this.comboBoxgruposanguineo.FormattingEnabled = true;
             this.comboBoxgruposanguineo.Items.AddRange(new object[] {
-            "AB",
-            "A",
-            "B",
-            "O",
-            "**"});
+            "Mayor de 44 U/L",
+            "Mayor de 40 U/L",
+            "Mayor de 6 U/L"});
             this.comboBoxgruposanguineo.Location = new System.Drawing.Point(171, 130);
             this.comboBoxgruposanguineo.Name = "comboBoxgruposanguineo";
             this.comboBoxgruposanguineo.Size = new System.Drawing.Size(200, 21);
@@ -83,13 +79,6 @@
             this.textBoxdireccion.Name = "textBoxdireccion";
             this.textBoxdireccion.Size = new System.Drawing.Size(200, 20);
             this.textBoxdireccion.TabIndex = 77;
-            // 
-            // textBoxafiliacion
-            // 
-            this.textBoxafiliacion.Location = new System.Drawing.Point(171, 18);
-            this.textBoxafiliacion.Name = "textBoxafiliacion";
-            this.textBoxafiliacion.Size = new System.Drawing.Size(200, 20);
-            this.textBoxafiliacion.TabIndex = 74;
             // 
             // label6
             // 
@@ -136,15 +125,6 @@
             this.label2.TabIndex = 69;
             this.label2.Text = "Fecha de Indicacion:";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 13);
-            this.label1.TabIndex = 68;
-            this.label1.Text = "Id de la Prueba:";
-            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(171, 44);
@@ -178,13 +158,11 @@
             this.Controls.Add(this.buttonguardar);
             this.Controls.Add(this.buttoncancelar);
             this.Controls.Add(this.textBoxdireccion);
-            this.Controls.Add(this.textBoxafiliacion);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "Ingresar_Prueba_ADA";
             this.Text = "Ingresar Prueba ADA";
             this.Load += new System.EventHandler(this.Ingresar_Prueba_ADA_Load);
@@ -198,13 +176,11 @@
         private System.Windows.Forms.Button buttonguardar;
         private System.Windows.Forms.Button buttoncancelar;
         private System.Windows.Forms.TextBox textBoxdireccion;
-        private System.Windows.Forms.TextBox textBoxafiliacion;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;

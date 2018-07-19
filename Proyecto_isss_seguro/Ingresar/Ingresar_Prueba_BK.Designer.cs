@@ -32,26 +32,34 @@
             this.comboBoxgruposanguineo = new System.Windows.Forms.ComboBox();
             this.buttonguardar = new System.Windows.Forms.Button();
             this.buttoncancelar = new System.Windows.Forms.Button();
-            this.textBoxdireccion = new System.Windows.Forms.TextBox();
-            this.textBoxapellidos = new System.Windows.Forms.TextBox();
             this.textBoxnombres = new System.Windows.Forms.TextBox();
-            this.textBoxafiliacion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // comboBoxfactorrh
             // 
             this.comboBoxfactorrh.FormattingEnabled = true;
             this.comboBoxfactorrh.Items.AddRange(new object[] {
-            "+",
-            "-",
+            "1B",
+            "2B",
+            "3B",
+            "4B",
+            "5B",
+            "6B",
+            "7B",
+            "8B",
+            "9B",
+            "P+",
+            "P++",
+            "P+++",
             "*"});
-            this.comboBoxfactorrh.Location = new System.Drawing.Point(181, 154);
+            this.comboBoxfactorrh.Location = new System.Drawing.Point(180, 142);
             this.comboBoxfactorrh.Name = "comboBoxfactorrh";
             this.comboBoxfactorrh.Size = new System.Drawing.Size(133, 21);
             this.comboBoxfactorrh.TabIndex = 67;
@@ -60,12 +68,20 @@
             // 
             this.comboBoxgruposanguineo.FormattingEnabled = true;
             this.comboBoxgruposanguineo.Items.AddRange(new object[] {
-            "AB",
-            "A",
-            "B",
-            "O",
-            "**"});
-            this.comboBoxgruposanguineo.Location = new System.Drawing.Point(181, 126);
+            "1B",
+            "2B",
+            "3B",
+            "4B",
+            "5B",
+            "6B",
+            "7B",
+            "8B",
+            "9B",
+            "P+",
+            "P++",
+            "P+++",
+            "*"});
+            this.comboBoxgruposanguineo.Location = new System.Drawing.Point(180, 114);
             this.comboBoxgruposanguineo.Name = "comboBoxgruposanguineo";
             this.comboBoxgruposanguineo.Size = new System.Drawing.Size(133, 21);
             this.comboBoxgruposanguineo.TabIndex = 66;
@@ -89,38 +105,17 @@
             this.buttoncancelar.UseVisualStyleBackColor = true;
             this.buttoncancelar.Click += new System.EventHandler(this.buttoncancelar_Click);
             // 
-            // textBoxdireccion
-            // 
-            this.textBoxdireccion.Location = new System.Drawing.Point(181, 97);
-            this.textBoxdireccion.Name = "textBoxdireccion";
-            this.textBoxdireccion.Size = new System.Drawing.Size(133, 20);
-            this.textBoxdireccion.TabIndex = 60;
-            // 
-            // textBoxapellidos
-            // 
-            this.textBoxapellidos.Location = new System.Drawing.Point(181, 68);
-            this.textBoxapellidos.Name = "textBoxapellidos";
-            this.textBoxapellidos.Size = new System.Drawing.Size(133, 20);
-            this.textBoxapellidos.TabIndex = 59;
-            // 
             // textBoxnombres
             // 
-            this.textBoxnombres.Location = new System.Drawing.Point(181, 42);
+            this.textBoxnombres.Location = new System.Drawing.Point(180, 30);
             this.textBoxnombres.Name = "textBoxnombres";
             this.textBoxnombres.Size = new System.Drawing.Size(133, 20);
             this.textBoxnombres.TabIndex = 58;
             // 
-            // textBoxafiliacion
-            // 
-            this.textBoxafiliacion.Location = new System.Drawing.Point(181, 14);
-            this.textBoxafiliacion.Name = "textBoxafiliacion";
-            this.textBoxafiliacion.Size = new System.Drawing.Size(133, 20);
-            this.textBoxafiliacion.TabIndex = 57;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(46, 162);
+            this.label6.Location = new System.Drawing.Point(45, 150);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(98, 13);
             this.label6.TabIndex = 52;
@@ -129,7 +124,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(46, 134);
+            this.label5.Location = new System.Drawing.Point(45, 122);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(129, 13);
             this.label5.TabIndex = 51;
@@ -138,7 +133,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(46, 104);
+            this.label4.Location = new System.Drawing.Point(45, 92);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 13);
             this.label4.TabIndex = 50;
@@ -147,7 +142,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 75);
+            this.label3.Location = new System.Drawing.Point(45, 63);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 13);
             this.label3.TabIndex = 49;
@@ -156,40 +151,52 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(46, 49);
+            this.label2.Location = new System.Drawing.Point(45, 37);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 13);
             this.label2.TabIndex = 48;
             this.label2.Text = "Numero BK:";
             // 
-            // label1
+            // comboBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 13);
-            this.label1.TabIndex = 47;
-            this.label1.Text = "Id de la Prueba:";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Diagnostico",
+            "Tratamiento"});
+            this.comboBox1.Location = new System.Drawing.Point(180, 60);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(133, 21);
+            this.comboBox1.TabIndex = 68;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "1BK",
+            "2BK",
+            "3BK"});
+            this.comboBox2.Location = new System.Drawing.Point(180, 89);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(133, 21);
+            this.comboBox2.TabIndex = 69;
             // 
             // Ingresar_Prueba_BK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(349, 244);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.comboBoxfactorrh);
             this.Controls.Add(this.comboBoxgruposanguineo);
             this.Controls.Add(this.buttonguardar);
             this.Controls.Add(this.buttoncancelar);
-            this.Controls.Add(this.textBoxdireccion);
-            this.Controls.Add(this.textBoxapellidos);
             this.Controls.Add(this.textBoxnombres);
-            this.Controls.Add(this.textBoxafiliacion);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "Ingresar_Prueba_BK";
             this.Text = "Ingresar Prueba BK";
             this.Load += new System.EventHandler(this.Ingresar_Prueba_BK_Load);
@@ -203,15 +210,13 @@
         private System.Windows.Forms.ComboBox comboBoxgruposanguineo;
         private System.Windows.Forms.Button buttonguardar;
         private System.Windows.Forms.Button buttoncancelar;
-        private System.Windows.Forms.TextBox textBoxdireccion;
-        private System.Windows.Forms.TextBox textBoxapellidos;
         private System.Windows.Forms.TextBox textBoxnombres;
-        private System.Windows.Forms.TextBox textBoxafiliacion;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

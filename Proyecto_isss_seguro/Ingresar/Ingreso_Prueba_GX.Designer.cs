@@ -31,12 +31,10 @@
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.comboBoxgruposanguineo = new System.Windows.Forms.ComboBox();
-            this.textBoxafiliacion = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.buttonguardar = new System.Windows.Forms.Button();
             this.buttoncancelar = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -60,22 +58,15 @@
             // 
             this.comboBoxgruposanguineo.FormattingEnabled = true;
             this.comboBoxgruposanguineo.Items.AddRange(new object[] {
-            "AB",
-            "A",
-            "B",
-            "O",
-            "**"});
+            "MTB DETECTABLE SENSIBLE A RIF",
+            "MTB DETECTABLE RESISTENTE A RIF",
+            "INDETERMINADO",
+            "NEGATIVO",
+            "PENDIENTE"});
             this.comboBoxgruposanguineo.Location = new System.Drawing.Point(162, 99);
             this.comboBoxgruposanguineo.Name = "comboBoxgruposanguineo";
             this.comboBoxgruposanguineo.Size = new System.Drawing.Size(200, 21);
             this.comboBoxgruposanguineo.TabIndex = 92;
-            // 
-            // textBoxafiliacion
-            // 
-            this.textBoxafiliacion.Location = new System.Drawing.Point(162, 15);
-            this.textBoxafiliacion.Name = "textBoxafiliacion";
-            this.textBoxafiliacion.Size = new System.Drawing.Size(200, 20);
-            this.textBoxafiliacion.TabIndex = 90;
             // 
             // label5
             // 
@@ -113,15 +104,6 @@
             this.label2.TabIndex = 86;
             this.label2.Text = "Fecha de Indicacion:";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 13);
-            this.label1.TabIndex = 85;
-            this.label1.Text = "Id de la Prueba:";
-            // 
             // buttonguardar
             // 
             this.buttonguardar.Location = new System.Drawing.Point(30, 175);
@@ -145,11 +127,17 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "AB",
-            "A",
-            "B",
-            "O",
-            "**"});
+            "S.R CON BK(-)Y TB PRESUNTIVO.",
+            "PERSONA CON VIH",
+            "PRIVADOS DE LIBERTAD",
+            "S.R CON DIABETES ",
+            "S.R. CON INMONODEFICIENCIA",
+            "CASO TB QUE NO NEGATIVIZA AL 2º -3º MES DE TX",
+            "RETRATAMIENTO",
+            "SOSPECHA DE TB EXTRAPULMONAR ",
+            "",
+            "",
+            ""});
             this.comboBox1.Location = new System.Drawing.Point(162, 68);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(200, 21);
@@ -166,12 +154,10 @@
             this.Controls.Add(this.dateTimePicker3);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.comboBoxgruposanguineo);
-            this.Controls.Add(this.textBoxafiliacion);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "Ingreso_Prueba_GX";
             this.Text = "Ingresar Prueba GX";
             this.ResumeLayout(false);
@@ -184,12 +170,10 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox comboBoxgruposanguineo;
-        private System.Windows.Forms.TextBox textBoxafiliacion;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonguardar;
         private System.Windows.Forms.Button buttoncancelar;
         private System.Windows.Forms.ComboBox comboBox1;
