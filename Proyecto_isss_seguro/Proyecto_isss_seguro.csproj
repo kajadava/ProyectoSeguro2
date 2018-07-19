@@ -70,6 +70,11 @@
     <Compile Include="Actualizar\Actualizar_Usuario.Designer.cs">
       <DependentUpon>Actualizar_Usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clases\CCBKGeneral.cs" />
+    <Compile Include="Clases\CCBKmuestra.cs" />
+    <Compile Include="Clases\Conexion.cs" />
+    <Compile Include="Clases\PruebaADA.cs" />
+    <Compile Include="Clases\PruebaBK.cs" />
     <Compile Include="Clases\TipoMuestra.cs" />
     <Compile Include="Ingresar\Agregar_Establecimiento.cs">
       <SubType>Form</SubType>
@@ -89,18 +94,17 @@
     <Compile Include="Ingresar\CC_BK_General.Designer.cs">
       <DependentUpon>CC_BK_General.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ingresar\CC_BK_Muestras.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ingresar\CC_BK_Muestras.Designer.cs">
-      <DependentUpon>CC_BK_Muestras.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Clases\Conexion.cs" />
     <Compile Include="Clases\Establecimiento.cs" />
     <Compile Include="Clases\Muestra.cs" />
     <Compile Include="Clases\Paciente.cs" />
     <Compile Include="Clases\Prueba.cs" />
     <Compile Include="Clases\User.cs" />
+    <Compile Include="Ingresar\CC_BK_muestra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresar\CC_BK_muestra.Designer.cs">
+      <DependentUpon>CC_BK_muestra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ver\Establecimientos_ISSS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,8 +278,8 @@
     <EmbeddedResource Include="Ingresar\CC_BK_General.resx">
       <DependentUpon>CC_BK_General.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ingresar\CC_BK_Muestras.resx">
-      <DependentUpon>CC_BK_Muestras.cs</DependentUpon>
+    <EmbeddedResource Include="Ingresar\CC_BK_muestra.resx">
+      <DependentUpon>CC_BK_muestra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ver\Establecimientos_ISSS.resx">
       <DependentUpon>Establecimientos_ISSS.cs</DependentUpon>

@@ -138,6 +138,27 @@ namespace Proyecto_isss_seguro.Clases
                 le.Add(es);
             }
             return le;
+
+        }
+
+        public static List<Establecimiento> cargartodos(MySqlConnection conexion)
+
+        {
+
+            String query = "Select IDESTABLECIMIENTO, NOMBREESTABLECIMIENTO from establecimiento";
+
+            List<Establecimiento> le = new List<Establecimiento>();
+            MySqlCommand comando = new MySqlCommand(query, conexion);
+            MySqlDataReader rd = comando.ExecuteReader();
+
+            while (rd.Read())
+            {
+                Establecimiento es = new Establecimiento();
+                es.idEstablecimiento = rd.GetInt32(0);
+                es.nombreEstablecimiento = rd.GetString(1);
+                le.Add(es);
+            }
+            return le;
         }
     }
 }

@@ -8,8 +8,25 @@ namespace Proyecto_isss_seguro.Clases
 {
     class Prueba
     {
-        int idprueba;
-        int idmuestra;
-        int idtipoprueba;
+        public int idprueba;
+        public int idmuestra;
+        public int idtipoprueba;
+
+        public Prueba() { }
+
+        public Prueba(int idpru, int idmue, int idtipo)
+        {
+            this.idprueba = idpru;
+            this.idmuestra = idmue;
+            this.idtipoprueba = idtipo;
+        }
+
+        public Prueba(int idmue, int idtipo)
+        {
+            this.idmuestra = idmue;
+            this.idtipoprueba = idtipo;
+        }
+
+
     }
 }

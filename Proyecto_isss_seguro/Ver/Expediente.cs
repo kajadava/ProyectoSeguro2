@@ -137,6 +137,7 @@ namespace Proyecto_isss_seguro.Ver
                     label20.Text = pac.noafiliacion;
                 }
             }catch (MySqlException ex)
+
             {
 
             }

@@ -20,7 +20,7 @@ namespace Proyecto_isss_seguro
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CC_BK_Muestras vnt0 = new CC_BK_Muestras();
+            Ingresar.CC_BK_muestra vnt0 = new Ingresar.CC_BK_muestra();
             vnt0.Show();
         }
 
