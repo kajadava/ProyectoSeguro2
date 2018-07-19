@@ -49,7 +49,7 @@ namespace Proyecto_isss_seguro.Clases
 
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format("select muestra.IDMUESTRA, tipomuestra.NOMBRETIPOMUESTRA as Tipo, muestra.IDPACIENTE, muestra.OBSERVACIONMUESTRA, establecimiento.NOMBREESTABLECIMIENTO as refe, muestra.IDESTABLECIMEINTOCULTI, muestra.FECHA from muestra inner join tipomuestra on muestra.IDTIPODEMUESTRA = tipomuestra.IDTIPOMUESTRA inner join establecimiento on muestra.IDESTABLECIMIENTOREFE = establecimiento.IDESTABLECIMIENTO where muestra.IDPACIENTE ='" + idPaciente + "'"), conexion);
+                MySqlCommand comando = new MySqlCommand(string.Format("select muestra.IDMUESTRA, tipomuestra.NOMBRETIPOMUESTRA as Tipo, muestra.IDPACIENTE, muestra.OBSERVACIONMUESTRA, Referencia.Refe, Cultivo.culti, muestra.FECHA from muestra join tipomuestra on muestra.IDTIPODEMUESTRA = tipomuestra.IDTIPOMUESTRA inner join referencia on muestra.IDMUESTRA = referencia.IDMUESTRA inner join cultivo on muestra.IDMUESTRA = cultivo.IDMUESTRA where muestra.IDPACIENTE ='" + idPaciente + "'"), conexion);
                 MySqlDataAdapter dataAdapter = new MySqlDataAdapter(comando);
                 dataAdapter.Fill(datat);
                 dgv.DataSource = datat;

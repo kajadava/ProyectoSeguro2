@@ -99,7 +99,7 @@ namespace Proyecto_isss_seguro
                 this.Hide();
                 Actualizar.Actualizar_Establecimiento vnt1 = new Actualizar.Actualizar_Establecimiento();
                 vnt1.comboBox2.Text = IdEntidad;
-                vnt1.comboBox1.Text = IdRegion;
+                vnt1.comboBox1.Text = cambiarRegionString(IdRegion);
                 vnt1.textBox3.Text = NombreEstablecimiento;
                 vnt1.comboBox3.Text = TipoEstablecimiento;
                 vnt1.textBox4.Text = DireccionEstablecimiento;

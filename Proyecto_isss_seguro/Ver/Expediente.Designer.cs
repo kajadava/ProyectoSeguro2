@@ -379,7 +379,7 @@
             // 
             // Column6
             // 
-            this.Column6.DataPropertyName = "IDESTABLECIMEINTOCULTI";
+            this.Column6.DataPropertyName = "culti";
             this.Column6.HeaderText = "Establecimiento Culti";
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;

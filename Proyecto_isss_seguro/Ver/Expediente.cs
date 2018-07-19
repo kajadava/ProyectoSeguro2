@@ -79,6 +79,7 @@ namespace Proyecto_isss_seguro.Ver
                 this.Hide();
                 Actualizar.Actualizar_Muestra vnt2 = new Actualizar.Actualizar_Muestra();
                 vnt2.label7.Text = IdPaciente;
+                vnt2.dateTimePicker2.Text = cambiarfecha(Fecha);
                 vnt2.comboBox1.Text = IdEstablecimientoRefe;
                 vnt2.comboBox2.Text = IdEstablecimientoCulti;
                 vnt2.cbTipoMuestra.Text = IdTipoDeMuestra;
@@ -101,7 +102,15 @@ namespace Proyecto_isss_seguro.Ver
             IdEstablecimientoRefe = dataGridView1.Rows[e.RowIndex].Cells["Column5"].Value.ToString();
             IdEstablecimientoCulti = dataGridView1.Rows[e.RowIndex].Cells["Column6"].Value.ToString();
         }
-
+        public static String cambiarfecha(String Fecha)
+        {
+            String sdate = "01/12/2018 13:00:00";
+            DateTime dt = Convert.ToDateTime(sdate);
+            IFormatProvider cul = new System.Globalization.CultureInfo("en-us", true);
+            DateTime dt1 = DateTime.Parse(sdate, cul, System.Globalization.DateTimeStyles.AssumeLocal);
+            return sdate;
+        }
+        
         private void button3_Click(object sender, EventArgs e)
         {
             if (IdMuestra != null)
@@ -150,7 +159,7 @@ namespace Proyecto_isss_seguro.Ver
 
             MySqlCommand cmd = con.conexion.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select muestra.IDMUESTRA, tipomuestra.NOMBRETIPOMUESTRA as Tipo, muestra.IDPACIENTE, muestra.OBSERVACIONMUESTRA, establecimiento.NOMBREESTABLECIMIENTO as refe, muestra.IDESTABLECIMEINTOCULTI, muestra.FECHA from muestra inner join tipomuestra on muestra.IDTIPODEMUESTRA = tipomuestra.IDTIPOMUESTRA inner join establecimiento on muestra.IDESTABLECIMIENTOREFE = establecimiento.IDESTABLECIMIENTO where muestra.FECHA like('" + textBox1.Text + "%') or tipomuestra.NOMBRETIPOMUESTRA like('" + textBox1.Text + "%') or establecimiento.NOMBREESTABLECIMIENTO like('" + textBox1.Text + "%')";
+            cmd.CommandText = "select muestra.IDMUESTRA, tipomuestra.NOMBRETIPOMUESTRA as Tipo, muestra.IDPACIENTE, muestra.OBSERVACIONMUESTRA, Referencia.Refe, Cultivo.culti, muestra.FECHA from muestra join tipomuestra on muestra.IDTIPODEMUESTRA = tipomuestra.IDTIPOMUESTRA inner join referencia on muestra.IDMUESTRA = referencia.IDMUESTRA inner join cultivo on muestra.IDMUESTRA = cultivo.IDMUESTRA where muestra.FECHA like('" + textBox1.Text + "%') or tipomuestra.NOMBRETIPOMUESTRA like('" + textBox1.Text + "%') or Referencia.Refe like('" + textBox1.Text + "%') or Cultivo.culti like('" + textBox1.Text + "%')";
             cmd.ExecuteNonQuery();
 
             DataTable dt = new DataTable();

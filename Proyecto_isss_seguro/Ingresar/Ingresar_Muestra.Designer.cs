@@ -55,7 +55,7 @@
             "B",
             "O",
             "**"});
-            this.cbTipoMuestra.Location = new System.Drawing.Point(200, 98);
+            this.cbTipoMuestra.Location = new System.Drawing.Point(200, 103);
             this.cbTipoMuestra.Name = "cbTipoMuestra";
             this.cbTipoMuestra.Size = new System.Drawing.Size(202, 21);
             this.cbTipoMuestra.TabIndex = 66;
@@ -83,7 +83,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(48, 136);
+            this.label5.Location = new System.Drawing.Point(48, 133);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(137, 13);
             this.label5.TabIndex = 51;
@@ -130,11 +130,11 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.CustomFormat = "yyyy/MM/dd";
-            this.dateTimePicker2.Location = new System.Drawing.Point(200, 155);
+            this.dateTimePicker2.Location = new System.Drawing.Point(200, 156);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(202, 20);
             this.dateTimePicker2.TabIndex = 84;
-            this.dateTimePicker2.Value = new System.DateTime(2018, 7, 15, 13, 5, 36, 0);
+            this.dateTimePicker2.Value = new System.DateTime(2018, 7, 18, 0, 0, 0, 0);
             this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // label3
@@ -157,7 +157,7 @@
             // 
             // textBoxObservacion
             // 
-            this.textBoxObservacion.Location = new System.Drawing.Point(200, 129);
+            this.textBoxObservacion.Location = new System.Drawing.Point(200, 130);
             this.textBoxObservacion.Name = "textBoxObservacion";
             this.textBoxObservacion.Size = new System.Drawing.Size(202, 20);
             this.textBoxObservacion.TabIndex = 60;
@@ -173,7 +173,7 @@
             "B",
             "O",
             "**"});
-            this.comboBox1.Location = new System.Drawing.Point(200, 44);
+            this.comboBox1.Location = new System.Drawing.Point(200, 48);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(202, 21);
             this.comboBox1.TabIndex = 88;
@@ -189,7 +189,7 @@
             "B",
             "O",
             "**"});
-            this.comboBox2.Location = new System.Drawing.Point(200, 71);
+            this.comboBox2.Location = new System.Drawing.Point(200, 76);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(202, 21);
             this.comboBox2.TabIndex = 89;
@@ -230,7 +230,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        public System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBoxObservacion;
