@@ -92,11 +92,11 @@ namespace Proyecto_isss_seguro.Ver
                 {
                     mu = Clases.Muestra.cargarMuestra(con.conexion, id);
                     label4.Text = Convert.ToString(mu.idmuestra);
-                    label6.Text = Convert.ToString(mu.idtipomuestra);
+                    label6.Text = Convert.ToString(mu.nomtipomuestra);
                     label15.Text = mu.fecha;
                     label13.Text = mu.observacionMuestra;
-                    label5.Text = Convert.ToString(mu.idestablecimientorefe);
-                    label14.Text = Convert.ToString(mu.idestablecimientoculti);
+                    label5.Text = Convert.ToString(mu.nomestarefe);
+                    label14.Text = Convert.ToString(mu.nomestaculti);
                 }
             }
             catch (MySqlException ex)
@@ -104,6 +104,56 @@ namespace Proyecto_isss_seguro.Ver
 
             }
             con.desconectar();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

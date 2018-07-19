@@ -237,6 +237,7 @@
             this.buttoncancelar.TabIndex = 198;
             this.buttoncancelar.Text = "Regresar";
             this.buttoncancelar.UseVisualStyleBackColor = true;
+            this.buttoncancelar.Click += new System.EventHandler(this.buttoncancelar_Click_1);
             // 
             // label6
             // 
@@ -357,7 +358,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbesta;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox4;
@@ -382,5 +382,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.ComboBox cbesta;
     }
 }

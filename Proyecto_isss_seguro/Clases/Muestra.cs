@@ -19,6 +19,11 @@ namespace Proyecto_isss_seguro.Clases
         public int idestablecimientorefe;
         public int idestablecimientoculti;
 
+        public string nomtipomuestra;
+        public string nomestaculti;
+        public string nomestarefe;
+
+
         public Muestra() { }
         public Muestra(int idmuestra, int idtipomuestra, int idpaciente, String fecha, String observacionMuestra, int idestablecimientorefe, int idestablecimientoculti)
         {
@@ -89,7 +94,7 @@ namespace Proyecto_isss_seguro.Clases
         }
         public static Muestra cargarMuestra(MySqlConnection conexion, String id)
         {
-            String query = "select * from muestra where idMuestra='" + id + "'";
+            String query = "select muestra.IDMUESTRA, tipomuestra.NOMBRETIPOMUESTRA,  muestra.OBSERVACIONMUESTRA, Referencia.Refe, Cultivo.culti, muestra.FECHA from muestra join tipomuestra on muestra.IDTIPODEMUESTRA = tipomuestra.IDTIPOMUESTRA inner join referencia on muestra.IDMUESTRA = referencia.IDMUESTRA inner join cultivo on muestra.IDMUESTRA = cultivo.IDMUESTRA where muestra.IDMUESTRA = '" + id + "'";
             try
             {
                 Muestra p = new Muestra();
@@ -98,12 +103,11 @@ namespace Proyecto_isss_seguro.Clases
                 while (datos.Read())
                 {
                     p.idmuestra = datos.GetInt32(0);
-                    p.idtipomuestra = datos.GetInt32(1);
-                    p.idpaciente = datos.GetInt32(2);
-                    p.fecha = datos.GetString(3);
-                    p.observacionMuestra = datos.GetString(4);
-                    p.idestablecimientorefe = datos.GetInt32(5);
-                    p.idestablecimientoculti = datos.GetInt32(6);
+                    p.nomtipomuestra = datos.GetString(1);
+                    p.observacionMuestra = datos.GetString(2);
+                    p.nomestarefe = datos.GetString(3);
+                    p.nomestaculti = datos.GetString(4);
+                    p.fecha = datos.GetString(5);
                 }
                 return p;
 

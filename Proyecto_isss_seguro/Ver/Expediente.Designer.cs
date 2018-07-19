@@ -41,6 +41,13 @@
             this.label11 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button4 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -57,13 +64,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -195,6 +195,58 @@
             this.dataGridView1.TabIndex = 92;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "idmuestra";
+            this.Column1.HeaderText = "Id Muestra";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Visible = false;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "tipo";
+            this.Column2.HeaderText = "Tipo";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "idpaciente";
+            this.Column3.HeaderText = "Id Paciente";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Visible = false;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "observacionmuestra";
+            this.Column4.HeaderText = "Observacion de la Muestra";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Visible = false;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "refe";
+            this.Column5.HeaderText = "Establecimiento Refe";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "culti";
+            this.Column6.HeaderText = "Establecimiento Culti";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "fecha";
+            this.Column7.HeaderText = "Fecha";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(196, 167);
@@ -285,6 +337,7 @@
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 106;
             this.label3.Text = "label3";
+            this.label3.Visible = false;
             // 
             // label21
             // 
@@ -303,6 +356,7 @@
             this.label22.Size = new System.Drawing.Size(60, 13);
             this.label22.TabIndex = 108;
             this.label22.Text = "Idpaciente:";
+            this.label22.Visible = false;
             // 
             // label17
             // 
@@ -338,58 +392,6 @@
             this.textBox1.Size = new System.Drawing.Size(425, 20);
             this.textBox1.TabIndex = 112;
             this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "idmuestra";
-            this.Column1.HeaderText = "Id Muestra";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Visible = false;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "tipo";
-            this.Column2.HeaderText = "Tipo";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "idpaciente";
-            this.Column3.HeaderText = "Id Paciente";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Visible = false;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "observacionmuestra";
-            this.Column4.HeaderText = "Observacion de la Muestra";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Visible = false;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "refe";
-            this.Column5.HeaderText = "Establecimiento Refe";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "culti";
-            this.Column6.HeaderText = "Establecimiento Culti";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "fecha";
-            this.Column7.HeaderText = "Fecha";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
             // 
             // Expediente
             // 

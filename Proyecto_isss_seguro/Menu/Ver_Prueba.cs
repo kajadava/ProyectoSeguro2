@@ -19,9 +19,9 @@ namespace Proyecto_isss_seguro
 
         private void button5_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            //Ver.expedientemuestra vnt1 = new Ver.expedientemuestra();
-            //vnt1.Show();
+            /*this.Hide();
+            Ver.expedientemuestra vnt1 = new Ver.expedientemuestra();
+            vnt1.Show();*/
         }
 
         private void button4_Click(object sender, EventArgs e)

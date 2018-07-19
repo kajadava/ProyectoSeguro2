@@ -24,9 +24,7 @@ namespace Proyecto_isss_seguro
 
         private void buttoncancelar_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Menu_Consolidados vnt0 = new Menu_Consolidados();
-            vnt0.Show();
+         
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -84,6 +82,13 @@ namespace Proyecto_isss_seguro
         private void buttonguardar_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttoncancelar_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu_Consolidados vnt0 = new Menu_Consolidados();
+            vnt0.Show();
         }
     }
 }
