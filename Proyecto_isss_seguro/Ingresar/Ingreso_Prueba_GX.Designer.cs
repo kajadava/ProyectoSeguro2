@@ -112,6 +112,7 @@
             this.buttonguardar.TabIndex = 97;
             this.buttonguardar.Text = "Guardar";
             this.buttonguardar.UseVisualStyleBackColor = true;
+            this.buttonguardar.Click += new System.EventHandler(this.buttonguardar_Click);
             // 
             // buttoncancelar
             // 
